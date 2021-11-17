@@ -1,0 +1,39 @@
+<div class="table-responsive">
+    <h2 class="sub-header">View Interactions By Client</h2>
+    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ClientId</th>
+                    <th scope="col">ClientName</th>
+                    <th scope="col">EmployeeId</th>
+                    <th scope="col">EmployeeName</th>
+                    <th scope="col">InteractionType</th>
+                    <th scope="col">InteractionDate</th>
+                    <th scope="col">Remarks</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody *ngIf="hasResult">
+                <tr *ngFor="let interaction of interactionList">
+                    <td>{{interaction.clientId}}</td>
+                    <td>{{interaction.clientName}}</td>
+                    <td>{{interaction.empId}}</td>
+                    <td>{{interaction.employeeName}}</td>
+                    <td>{{interaction.intType}}</td>
+                    <td>{{interaction.intDate | date: 'shortDate'}}</td>
+                    <td>{{interaction.remarks}}</td>
+                    <td><a class="btn btn-primary" [routerLink]="['interaction/', interaction.id]" role="button">Update</a></td>
+                    <td><a class="btn btn-danger" (click)="deleteInteraction(interaction.id)" role="button">Delete</a></td>
+                </tr>
+            </tbody>
+            <div class="alert alert-warning" role="alert" *ngIf="!hasResult">
+                No Result Found.
+            </div>
+        </table>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <a class="btn btn-primary" [routerLink]="['/addInteractions']" role="button">Add New Interactions</a>
+</div>

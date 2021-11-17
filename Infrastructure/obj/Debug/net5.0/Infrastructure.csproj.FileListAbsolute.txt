@@ -1,0 +1,17 @@
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\ApplicationCore.dll
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\bin\Debug\net5.0\ApplicationCore.pdb
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+C:\Users\pruib\source\repos\ClientInformationSystem\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache

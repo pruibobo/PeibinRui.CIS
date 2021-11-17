@@ -1,0 +1,39 @@
+<h2>Add New Interaction</h2>
+<form (ngSubmit)="addInteractions()">
+    <div class="form-group">
+        <label>Client Id</label>
+        <!-- <input type="number" class="form-control" name="clientId" [(ngModel)]="newInteraction.clientId"> -->
+        <select class="custom-select" name="clientId" [(ngModel)]="newInteraction.clientId">
+            <option selected>Select One Client</option>
+            <option *ngFor="let client of clientList" [ngValue]="client.id">{{client.id}}: {{client.name}}</option>
+          </select>
+    </div>
+    <div class="form-group">
+        <label>Employee Id</label>
+        <!-- <input type="number" class="form-control" name="empId" [(ngModel)]="newInteraction.empId"> -->
+        <select class="custom-select" name="empId" [(ngModel)]="newInteraction.empId">
+            <option selected>Select One Employee</option>
+            <option *ngFor="let employee of employeeList" [ngValue]="employee.id">{{employee.id}}: {{employee.name}}</option>
+          </select>
+    </div>
+    <div class="form-group">
+        <label>Interaction Type</label>
+        <input type="text" class="form-control" name="intType" [(ngModel)]="newInteraction.intType">
+    </div>
+    <div class="form-group">
+        <label>Interaction Date</label>
+        <input type="date" class="form-control" name="intDate" [(ngModel)]="newInteraction.intDate">
+    </div>
+    <div class="form-group">
+        <label>Remarks</label>
+        <input type="text" class="form-control" name="remarks" [(ngModel)]="newInteraction.remarks">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="alert alert-success" role="alert" *ngIf="success">
+        New Interaction Added!
+        <br>
+        <a  [routerLink]="['/interactions']">View All Interactions</a>
+        <br>
+        <a [routerLink]="['/']">Back to home</a>
+    </div>
+</form>

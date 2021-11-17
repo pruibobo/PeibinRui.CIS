@@ -1,0 +1,28 @@
+<h2>Update Employee Interaction</h2>
+<form (ngSubmit)="updateInteraction()">
+    <div class="form-group">
+        <label>Employee Id</label>
+        <input type="number" class="form-control" name="empId" [(ngModel)]="newInteraction.empId">
+    </div>
+    <div class="form-group">
+        <label>Client Id: </label>
+        <input type="number" class="form-control" name="clientId" [(ngModel)]="newInteraction.clientId">
+    </div>
+    <div class="form-group">
+        <label>Interaction Type</label>
+        <input type="text" class="form-control" name="intType" [(ngModel)]="newInteraction.intType">
+    </div>
+    <div class="form-group">
+        <label>Interaction Date</label>
+        <input type="date" class="form-control" name="intDate" [(ngModel)]="newInteraction.intDate">
+    </div>
+    <div class="form-group">
+        <label>Remarks</label>
+        <input type="text" class="form-control" name="remarks" [(ngModel)]="newInteraction.remarks">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <div class="alert alert-success" role="alert" *ngIf="success">
+        Updated Employee Interaction!
+        <a [routerLink]="['/interactions/client/', currentInteraction.clientId]">Back to Previous Page</a>
+    </div>
+</form>
